@@ -1,0 +1,127 @@
+body{
+    margin: 0;
+    font-family: "Space Grotesk";
+}
+
+main{
+    display: flex;
+}
+
+
+.card-front{
+    position: absolute;
+    top: 150px;
+    left: 150px;
+}
+
+.card-back{
+    position: absolute;
+    top: 450px;
+    left: 250px;
+}
+
+.full-circle{
+   background-color:white;
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   position: absolute;
+   top: 175px;
+   left: 175px;
+}
+
+.empty-circle{
+    color: transparent;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 185px;
+    left: 230px;
+    border: 1px solid white;
+}
+
+.card-num{
+    position: absolute;
+    top: 280px;
+    left: 180px;
+    font-size: 1.9rem;
+    letter-spacing: 3px;
+    color: white;
+}
+.card-name{
+    position: absolute;
+    top: 350px;
+    left: 180px;
+    text-transform: uppercase;
+    color: white;
+}
+.card-exp{
+    position: absolute;
+    top: 350px;
+    left: 520px;
+    color: white;
+    letter-spacing: 1px;
+}
+.card-cvc{
+    position: absolute;
+    top: 562px;
+    left: 620px;
+    color: white;
+    letter-spacing: 2px;
+}
+
+/* ------------------------------------------------------right------------------------------------------------------- */
+
+.right-side{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    width: 100%;
+}
+
+form{
+    margin-top: 220px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    width: 40%;
+}
+
+form label{
+    font-weight: 500;
+    text-transform: uppercase;
+}
+input{
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+.info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.info-dates{
+    display: flex;
+    gap: 20px;
+}
+.info-dates input{
+    width: 20%;
+}
+
+button{
+    border: none;
+    color: white;
+    background-color: hsl(278, 68%, 11%);
+    padding: 15px;
+    border-radius: 10px;
+    font-family: "Space Grotesk";
+    font-size: 1.2rem;
+    margin-top: 10px;
+    cursor: pointer;
+}
