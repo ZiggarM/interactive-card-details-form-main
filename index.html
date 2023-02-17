@@ -26,26 +26,26 @@
 
   <div class="right-side">
     <form action="">
-      <label for="">Cardholder Name</label>
-      <input type="text" placeholder="e.g. Jane Appleseed">
-      <label for="">Card Number</label>
-      <input type="number" minlength="12" maxlength="12" placeholder="e.g. 1234 5678 9123 0000">
+      <label for="name">Cardholder Name</label>
+      <input id="name" required type="text" placeholder="e.g. Jane Appleseed">
+      <label for="card-num">Card Number</label>
+      <input id="card-num" required type="number" minlength="12" maxlength="12" placeholder="e.g. 1234 5678 9123 0000">
 
       <div class="info">
 
         <div class="info-date">
           <div>
-          <label for="">Exp. Date (MM/YY)</label>
+          <label for="month year">Exp. Date (MM/YY)</label>
           </div>
           <div class="info-dates">
-          <input min="01" max="12" type="number" placeholder="MM">
-          <input type="number" placeholder="YY">
+          <input id="month" required min="01" max="12" type="number" placeholder="MM">
+          <input required id="year" type="number" placeholder="YY">
           </div>
         </div>
 
         <div class="info-cvc">
-          <label  for="">CVC</label>
-          <input type="number" placeholder="e.g. 123">
+          <label  for="cvc">CVC</label>
+          <input required id="cvc" type="number" placeholder="e.g. 123">
         </div>
       </div>
       <button>Confirm</button>
@@ -70,17 +70,16 @@
 
 
 
-
   <!-- Completed state start -->
 <!-- 
   Thank you!
   We've added your card details
   Continue
    -->
-  <div class="attribution">
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div> -->
 
   <script src="app.js"></script>
 </body>
